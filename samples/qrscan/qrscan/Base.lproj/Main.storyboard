@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="qrscan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="naD-Dd-4NY">
+                                <rect key="frame" x="20" y="40" width="374" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="1cl-TI-Xde"/>
+                                </constraints>
+                                <string key="text">This example demonstrates scanning a QR code for one-time password (OTP) generation or multi-factor authentication (MMFA) with ISAM and Cloud Identity Verify.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aLN-rM-g3I">
+                                <rect key="frame" x="0.0" y="169.99999999999997" width="414" height="492.33333333333326"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11372549019607843" green="0.21176470588235294" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aLN-rM-g3I" secondAttribute="trailing" id="5qZ-7r-Z8b"/>
+                            <constraint firstItem="aLN-rM-g3I" firstAttribute="centerX" secondItem="naD-Dd-4NY" secondAttribute="centerX" id="HFc-ay-gWc"/>
+                            <constraint firstItem="naD-Dd-4NY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="JO9-X3-rcL"/>
+                            <constraint firstItem="aLN-rM-g3I" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" multiplier="0.9" id="Nzd-u1-n0a"/>
+                            <constraint firstItem="aLN-rM-g3I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Y0O-1t-4cD"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="naD-Dd-4NY" secondAttribute="leading" id="eJs-v0-9UL"/>
+                            <constraint firstItem="aLN-rM-g3I" firstAttribute="top" secondItem="naD-Dd-4NY" secondAttribute="bottom" constant="10" id="nXg-OV-S7e"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="naD-Dd-4NY" secondAttribute="trailing" id="wil-R9-8XK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewQRCamera" destination="aLN-rM-g3I" id="gsI-4Y-yhZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.199999999999999" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>

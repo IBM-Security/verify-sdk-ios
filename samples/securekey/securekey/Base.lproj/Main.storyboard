@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="securekey" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqz-TG-XrN">
+                                <rect key="frame" x="63.5" y="469.5" width="248" height="64"/>
+                                <color key="backgroundColor" red="0.25490196079999999" green="0.47058823529999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="248" id="ASs-oH-MPB"/>
+                                    <constraint firstAttribute="height" constant="64" id="tY7-fk-E5N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sign Data">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSignClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IQR-Jh-i7b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CN6-VH-OxN">
+                                <rect key="frame" x="63.5" y="569.5" width="248" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="248" id="1Se-7e-iT5"/>
+                                    <constraint firstAttribute="height" constant="64" id="uyZ-sr-ArD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Remove Key">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onRemoveClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NfQ-qA-VOG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDK-5h-Dkn">
+                                <rect key="frame" x="63.5" y="369.5" width="248" height="64"/>
+                                <color key="backgroundColor" red="0.25490196079999999" green="0.47058823529999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="248" id="5cc-6a-Mks"/>
+                                    <constraint firstAttribute="height" constant="64" id="jv5-bn-Lk7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Generate Key">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onGenerateClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8iL-pA-fQk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This example demonstrates creating a private and public key with optional Touch ID protection." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHE-Gi-x8W">
+                                <rect key="frame" x="18" y="50" width="339" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="key name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dqB-Kk-Bs6">
+                                <rect key="frame" x="18" y="143" width="343" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="9Wx-fO-iIT"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Protect with Touch ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mea-iM-aoQ">
+                                <rect key="frame" x="18" y="208" width="165" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.78039215689999997" green="0.78039215689999997" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WY9-co-2fx">
+                                <rect key="frame" x="310" y="203" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="0.11372549019607843" green="0.21176470588235294" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dqB-Kk-Bs6" firstAttribute="top" secondItem="gHE-Gi-x8W" secondAttribute="bottom" constant="32" id="4ng-KL-Icg"/>
+                            <constraint firstItem="WY9-co-2fx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5m3-5I-APx"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="mea-iM-aoQ" secondAttribute="trailing" constant="20" symbolic="YES" id="9Wu-4E-hhC"/>
+                            <constraint firstItem="WY9-co-2fx" firstAttribute="top" secondItem="dqB-Kk-Bs6" secondAttribute="bottom" constant="12" id="AL2-0K-iFV"/>
+                            <constraint firstItem="dqB-Kk-Bs6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="2" id="CaU-JR-6hm"/>
+                            <constraint firstItem="dqB-Kk-Bs6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="Ew2-O2-hcE"/>
+                            <constraint firstItem="WY9-co-2fx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="183" id="Eyi-mg-eXp"/>
+                            <constraint firstItem="Wqz-TG-XrN" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" multiplier="0.8" id="LCd-ea-czw"/>
+                            <constraint firstItem="gHE-Gi-x8W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="UhA-h2-0I2"/>
+                            <constraint firstItem="WY9-co-2fx" firstAttribute="centerY" secondItem="mea-iM-aoQ" secondAttribute="centerY" id="VqR-hx-t0l"/>
+                            <constraint firstItem="mea-iM-aoQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="18" id="W9H-Q1-fow"/>
+                            <constraint firstItem="Wqz-TG-XrN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WHs-x4-ysE"/>
+                            <constraint firstItem="UDK-5h-Dkn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dAe-cf-Igc"/>
+                            <constraint firstItem="CN6-VH-OxN" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" multiplier="0.95" id="i8w-gS-PhZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gHE-Gi-x8W" secondAttribute="trailing" constant="2" id="j61-wo-cXU"/>
+                            <constraint firstItem="UDK-5h-Dkn" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" multiplier="0.65" id="vr8-6e-44x"/>
+                            <constraint firstItem="CN6-VH-OxN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zuI-St-tdD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="switchUseTouchID" destination="WY9-co-2fx" id="bKp-Jr-4Zd"/>
+                        <outlet property="textboxKeyname" destination="dqB-Kk-Bs6" id="kkd-m7-Bes"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.600000000000001" y="128.18590704647679"/>
+        </scene>
+    </scenes>
+</document>
