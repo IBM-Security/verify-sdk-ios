@@ -1,9 +1,13 @@
 # IBM Verify SDK for iOS
 
-[![SDK Version](https://img.shields.io/badge/version-2.1.1-lightgray.svg)](https://ibm.biz/ibmsecuritymobileaccesssdk)
+[![SDK Version](https://img.shields.io/badge/version-2.1.4-lightgray.svg)](https://ibm.biz/ibmsecuritymobileaccesssdk)
 ![Swift Version](https://img.shields.io/badge/swift-5.1-orange.svg)
 
 This repository contains sample apps and code snippets to showcase and provide guidance when developing mobile applications with the IBM Verify SDK. The following steps will help you get started.
+
+**NOTE:** An open-source version of the IBM Verify SDK for iOS is available at [https://github.com/ibm-security-verify/verify-sdk-ios](https://github.com/ibm-security-verify/verify-sdk-ios)
+
+<br/>
 
 [Looking for the Android version?](https://github.com/ibm-security/verify-sdk-android)
 
